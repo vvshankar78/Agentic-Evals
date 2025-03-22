@@ -1,0 +1,11 @@
+app_name: Agentic-Evals
+version: 1.0.0
+pipeline:
+  steps:
+    - data_generation
+    - data_transformation
+    - evaluation
+    - reporting
+logging:
+  level: DEBUG
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
