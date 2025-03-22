@@ -3,3 +3,14 @@
 
 # Environment variables
 .env
+
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/

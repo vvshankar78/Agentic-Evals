@@ -1,2 +1,3 @@
 turn off washing machine
 start the washing machine
+increase the temperature of washing machine

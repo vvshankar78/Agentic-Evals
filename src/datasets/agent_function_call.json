@@ -1,7 +1,6 @@
 [
   {
     "query": "turn off washing machine",
-    "function_call_results": [],
     "predicted_function": [
       {
         "ai_model_id": null,
@@ -14,7 +13,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_mPi3wJ0y2f4smt0HHkZeqRR9",
+        "id": "call_lK2oXilkxPV7aMv5QhRlayp1",
         "result": "Washing machine stopd.",
         "name": "washingmachine_control-control_operation",
         "function_name": "control_operation",
@@ -26,7 +25,6 @@
   },
   {
     "query": "start the washing machine",
-    "function_call_results": [],
     "predicted_function": [
       {
         "ai_model_id": null,
@@ -39,7 +37,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_HrSVlDjwAEERfgVbuQY0IfVF",
+        "id": "call_ZkFl8b5KFXQzNmDPvOsSOWh3",
         "result": "Washing machine startd.",
         "name": "washingmachine_control-control_operation",
         "function_name": "control_operation",
@@ -48,5 +46,9 @@
       }
     ],
     "response": "The washing machine has been started."
+  },
+  {
+    "query": "increase the temperature of washing machine",
+    "response": "Currently, I can only adjust the washing machine's mode, start/stop its operation, and set a timer. Adjusting the temperature directly isn't an actionable feature of the washing machine control system. Would you like me to modify its mode instead?"
   }
 ]
