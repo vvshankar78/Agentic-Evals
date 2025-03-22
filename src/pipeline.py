@@ -2,26 +2,32 @@ import yaml
 import os
 import sys
 import asyncio
+from utils.load_config import load_config
+# Add the paths to the system path
+sys.path.append(os.path.join(os.path.dirname(__file__), 'datagenerator'))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'datatransformer'))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'evaluator'))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'report'))
 
-def load_config(config_file):
-    with open(config_file, 'r') as file:
-        return yaml.safe_load(file)
+from datagenerator import generate_queries_from_groudtruth
+from datagenerator import device_control_agent
+
 
 if __name__ == "__main__":
-    # config_file_path = os.path.join(os.path.dirname(__file__), 'config.yaml')
-    # config = load_config(config_file_path)
+    config = load_config()
+    pipeline_config = config['pipeline']['steps']
+    print(pipeline_config)
 
-    # Add the paths to the system path
-    sys.path.append(os.path.join(os.path.dirname(__file__), 'datagenerator'))
-    sys.path.append(os.path.join(os.path.dirname(__file__), 'datatransformer'))
-    sys.path.append(os.path.join(os.path.dirname(__file__), 'evaluator'))
-    sys.path.append(os.path.join(os.path.dirname(__file__), 'reportgenerator'))
+    if 'generate_queries' in pipeline_config:
+        print('executing generate_queries_from_groundtruth')
+        generate_queries_from_groudtruth.extract_queries()
+        print('generate_queries_from_groundtruth executed')
 
-    # Run device_control_agent.py
-    from datagenerator import device_control_agent
-    print('executing device_control_agent')
-    asyncio.run(device_control_agent.main())
-    print('device_control_agent executed')
+  
+    if 'data_generation' in pipeline_config:
+        print('executing device_control_agent')
+        asyncio.run(device_control_agent.main())
+        print('device_control_agent executed')
 
     # # Run data_transform.py
     # from datatransformer import data_transform

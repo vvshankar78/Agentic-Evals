@@ -5,7 +5,7 @@ class ACControlPlugin:
     """A plugin to control the Air Conditioner (AC)."""
     
     @kernel_function(description="Turn the air conditioner on or off.")
-    def control_power(self, operation: Annotated[str, "The operation to perform (on/off)."]) -> str:
+    def control_device_operation(self, operation: Annotated[str, "The operation to perform (on/off)."]) -> str:
         if operation == "on":
             return "Air conditioner turned on."
         elif operation == "off":
@@ -33,7 +33,7 @@ class TVControlPlugin:
     """A plugin to control the TV."""
     
     @kernel_function(description="Turn the TV on or off.")
-    def control_power(self, operation: Annotated[str, "Turn TV on or off."]) -> str:
+    def control_device_operation(self, operation: Annotated[str, "Turn TV on or off."]) -> str:
         return f"TV turned {operation}."
 
     @kernel_function(description="Adjust TV volume.")
@@ -77,7 +77,7 @@ class DishwasherControlPlugin:
     """A plugin to control the dishwasher."""
     
     @kernel_function(description="Start, stop, pause, or resume the dishwasher.")
-    def control_operation(self, operation: Annotated[str, "Operation to perform."]) -> str:
+    def control_device_operation(self, operation: Annotated[str, "Operation to perform."]) -> str:
         return f"Dishwasher {operation}d."
 
     @kernel_function(description="Set the dishwasher mode.")
@@ -93,8 +93,8 @@ class WashingMachineControlPlugin:
     """A plugin to control the washing machine."""
     
     @kernel_function(description="Start, stop, pause, or resume the washing machine.")
-    def control_operation(self, operation: Annotated[str, "Operation to perform (start/stop/pause/resume). "]) -> str:
-        return f"Washing machine {operation}d."
+    def control_device_operation(self, operation: Annotated[str, "Operation to perform (start/stop/pause/resume). "]) -> str:
+        return f"Washing machine {operation}."
     
     @kernel_function(description="Set the washing machine mode.")
     def set_mode(self, mode: Annotated[str, "The mode to set (quick wash, delicate, heavy load). "]) -> str:

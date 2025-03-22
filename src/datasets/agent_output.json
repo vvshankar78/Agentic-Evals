@@ -13,10 +13,10 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_YGUBR3ZguATP3Gw1RrInMddo",
-        "result": "Washing machine stopd.",
-        "name": "washingmachine_control-control_operation",
-        "function_name": "control_operation",
+        "id": "call_EIVA6FTNscodBXIsB63VUfs4",
+        "result": "Washing machine stop.",
+        "name": "washingmachine_control-control_device_operation",
+        "function_name": "control_device_operation",
         "plugin_name": "washingmachine_control",
         "encoding": null
       }
@@ -37,10 +37,10 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_okJCp1xEx7AkUcTCGOQ7jy2F",
-        "result": "Washing machine startd.",
-        "name": "washingmachine_control-control_operation",
-        "function_name": "control_operation",
+        "id": "call_5VlfZ5jdwO6Sq08ORL7JTpnZ",
+        "result": "Washing machine start.",
+        "name": "washingmachine_control-control_device_operation",
+        "function_name": "control_device_operation",
         "plugin_name": "washingmachine_control",
         "encoding": null
       }
@@ -48,7 +48,195 @@
     "response": "The washing machine has been started."
   },
   {
-    "query": "increase the temperature of washing machine",
-    "response": "Washing machines typically do not have an option to directly increase or adjust their temperature manually. Instead, their temperature settings depend on the selected washing mode or program.\n\nLet me know if you'd like me to modify the washing mode or temperature indirectly by selecting a specific mode."
+    "query": "pause the washing machine",
+    "predicted_function": [
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "operation": "pause"
+          },
+          "used_arguments": {
+            "operation": "pause"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_q2eokbNGlygxE1pj8VwnDXxr",
+        "result": "Washing machine pause.",
+        "name": "washingmachine_control-control_device_operation",
+        "function_name": "control_device_operation",
+        "plugin_name": "washingmachine_control",
+        "encoding": null
+      }
+    ],
+    "response": "The washing machine is now paused."
+  },
+  {
+    "query": "resume the washing machine",
+    "predicted_function": [
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "operation": "resume"
+          },
+          "used_arguments": {
+            "operation": "resume"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_sfNsJAITALFVTpFHeDY5N8tY",
+        "result": "Washing machine resume.",
+        "name": "washingmachine_control-control_device_operation",
+        "function_name": "control_device_operation",
+        "plugin_name": "washingmachine_control",
+        "encoding": null
+      }
+    ],
+    "response": "The washing machine has been resumed."
+  },
+  {
+    "query": "stop the washing machine",
+    "predicted_function": [
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "operation": "stop"
+          },
+          "used_arguments": {
+            "operation": "stop"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_z3N4w4gObm0BX8CWuXgElaNv",
+        "result": "Washing machine stop.",
+        "name": "washingmachine_control-control_device_operation",
+        "function_name": "control_device_operation",
+        "plugin_name": "washingmachine_control",
+        "encoding": null
+      }
+    ],
+    "response": "The washing machine has been stopped."
+  },
+  {
+    "query": "set the washing machine to quick wash mode",
+    "predicted_function": [
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "mode": "quick wash"
+          },
+          "used_arguments": {
+            "mode": "quick wash"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_xfIV3OEGwr0SJarJzf8upkmb",
+        "result": "Washing machine set to quick wash mode.",
+        "name": "washingmachine_control-set_mode",
+        "function_name": "set_mode",
+        "plugin_name": "washingmachine_control",
+        "encoding": null
+      }
+    ],
+    "response": "The washing machine is now set to Quick Wash mode."
+  },
+  {
+    "query": "set the washing machine to delicate mode",
+    "predicted_function": [
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "mode": "delicate"
+          },
+          "used_arguments": {
+            "mode": "delicate"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_RXBtUZQzGcIarhVO2dkYsAnT",
+        "result": "Washing machine set to delicate mode.",
+        "name": "washingmachine_control-set_mode",
+        "function_name": "set_mode",
+        "plugin_name": "washingmachine_control",
+        "encoding": null
+      }
+    ],
+    "response": "The washing machine is now set to Delicate mode."
+  },
+  {
+    "query": "set the washing machine to heavy load mode",
+    "predicted_function": [
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "mode": "heavy load"
+          },
+          "used_arguments": {
+            "mode": "heavy load"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_h0hCY6UnEWEjMxty3r5KfFay",
+        "result": "Washing machine set to heavy load mode.",
+        "name": "washingmachine_control-set_mode",
+        "function_name": "set_mode",
+        "plugin_name": "washingmachine_control",
+        "encoding": null
+      }
+    ],
+    "response": "The washing machine is now set to Heavy Load mode."
+  },
+  {
+    "query": "set the washing machine timer to 30 minutes",
+    "predicted_function": [
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "time": "30 minutes"
+          },
+          "used_arguments": {
+            "time": "30 minutes"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_twGw2gKZjMDxGETAUuJzSuwU",
+        "result": "Washing machine timer set to 30 minutes.",
+        "name": "washingmachine_control-set_timer",
+        "function_name": "set_timer",
+        "plugin_name": "washingmachine_control",
+        "encoding": null
+      }
+    ],
+    "response": "The washing machine timer has been set to30 minutes."
+  },
+  {
+    "query": "set the washing machine timer to 1 hour",
+    "predicted_function": [
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "time": "1 hour"
+          },
+          "used_arguments": {
+            "time": "1 hour"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_Am1yNPyTs3r9nodquSV8Kkxw",
+        "result": "Washing machine timer set to 1 hour.",
+        "name": "washingmachine_control-set_timer",
+        "function_name": "set_timer",
+        "plugin_name": "washingmachine_control",
+        "encoding": null
+      }
+    ],
+    "response": "The washing machine timer has been set to1 hour."
   }
 ]

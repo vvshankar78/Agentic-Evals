@@ -23,6 +23,7 @@ from plugins.control_plugins import (
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from logging_tracing import setup_telemetry
 
+
 # Load environment variables from .env file
 load_dotenv(override=True)
 
@@ -97,7 +98,8 @@ async def main():
 
         if response_content:
             output_data["response"] = response_content
-            print('response :', output_data['query'], '\n', output_data['response'])
+            print('Query:', output_data['query'])
+            print('response:', output_data['response'])
 
         all_results.append(output_data)
 
