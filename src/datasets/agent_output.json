@@ -13,7 +13,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_lK2oXilkxPV7aMv5QhRlayp1",
+        "id": "call_YGUBR3ZguATP3Gw1RrInMddo",
         "result": "Washing machine stopd.",
         "name": "washingmachine_control-control_operation",
         "function_name": "control_operation",
@@ -37,7 +37,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_ZkFl8b5KFXQzNmDPvOsSOWh3",
+        "id": "call_okJCp1xEx7AkUcTCGOQ7jy2F",
         "result": "Washing machine startd.",
         "name": "washingmachine_control-control_operation",
         "function_name": "control_operation",
@@ -49,6 +49,6 @@
   },
   {
     "query": "increase the temperature of washing machine",
-    "response": "Currently, I can only adjust the washing machine's mode, start/stop its operation, and set a timer. Adjusting the temperature directly isn't an actionable feature of the washing machine control system. Would you like me to modify its mode instead?"
+    "response": "Washing machines typically do not have an option to directly increase or adjust their temperature manually. Instead, their temperature settings depend on the selected washing mode or program.\n\nLet me know if you'd like me to modify the washing mode or temperature indirectly by selecting a specific mode."
   }
 ]
