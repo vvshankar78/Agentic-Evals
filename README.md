@@ -1,7 +1,7 @@
 # Agentic-Eval-Pipeline
 
 ## Overview
-Agentic-Eval-Pipeline is a Python-based framework for building and evaluating agentic systems. It provides a modular and scalable structure for creating evaluation pipelines. and
+Agentic-Eval-Pipeline is a Python-based framework for building and evaluating agentic systems. It provides a modular and scalable structure for creating evaluation pipelines.
 
 ## Folder Structure
 ```
