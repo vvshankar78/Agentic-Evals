@@ -1,0 +1,52 @@
+[
+  {
+    "query": "turn off washing machine",
+    "function_call_results": [],
+    "predicted_function": [
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "operation": "stop"
+          },
+          "used_arguments": {
+            "operation": "stop"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_mPi3wJ0y2f4smt0HHkZeqRR9",
+        "result": "Washing machine stopd.",
+        "name": "washingmachine_control-control_operation",
+        "function_name": "control_operation",
+        "plugin_name": "washingmachine_control",
+        "encoding": null
+      }
+    ],
+    "response": "The washing machine has been turned off."
+  },
+  {
+    "query": "start the washing machine",
+    "function_call_results": [],
+    "predicted_function": [
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "operation": "start"
+          },
+          "used_arguments": {
+            "operation": "start"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_HrSVlDjwAEERfgVbuQY0IfVF",
+        "result": "Washing machine startd.",
+        "name": "washingmachine_control-control_operation",
+        "function_name": "control_operation",
+        "plugin_name": "washingmachine_control",
+        "encoding": null
+      }
+    ],
+    "response": "The washing machine has been started."
+  }
+]

@@ -1,5 +1,10 @@
 app_name: Agentic-Evals
 version: 1.0.0
+data_generation:
+  input_path: datasets
+  input_file: queries.txt
+  output_path: datasets
+  output_file: agent_function_call.json
 pipeline:
   steps:
     - data_generation
