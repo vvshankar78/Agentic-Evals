@@ -1,5 +1,6 @@
 import yaml
 import os
+import json
 
 def load_config():
     """
@@ -14,3 +15,4 @@ def load_config():
         raise FileNotFoundError(f"Config file not found at {config_path}")
     except yaml.YAMLError as e:
         raise RuntimeError(f"Error parsing YAML file: {e}")
+    

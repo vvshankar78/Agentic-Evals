@@ -14,22 +14,12 @@
     ],
     "predicted_function": [
       {
-        "ai_model_id": null,
-        "metadata": {
-          "arguments": {
-            "operation": "stop"
-          },
-          "used_arguments": {
-            "operation": "stop"
-          }
+        "arguments": {
+          "operation": "stop"
         },
-        "content_type": "function_result",
-        "id": "call_g4iZhrpklUkvZVab9qFmYTUu",
         "result": "Washing machine stop.",
-        "name": "washingmachine_control-control_device_operation",
         "function_name": "control_device_operation",
-        "plugin_name": "washingmachine_control",
-        "encoding": null
+        "plugin_name": "washingmachine_control"
       }
     ],
     "predicted_response": "The washing machine has been turned off."
@@ -49,22 +39,12 @@
     ],
     "predicted_function": [
       {
-        "ai_model_id": null,
-        "metadata": {
-          "arguments": {
-            "operation": "start"
-          },
-          "used_arguments": {
-            "operation": "start"
-          }
+        "arguments": {
+          "operation": "start"
         },
-        "content_type": "function_result",
-        "id": "call_PrqKqu3SUOwfZq4lNsmObu1M",
         "result": "Washing machine start.",
-        "name": "washingmachine_control-control_device_operation",
         "function_name": "control_device_operation",
-        "plugin_name": "washingmachine_control",
-        "encoding": null
+        "plugin_name": "washingmachine_control"
       }
     ],
     "predicted_response": "The washing machine has been started."
@@ -84,22 +64,12 @@
     ],
     "predicted_function": [
       {
-        "ai_model_id": null,
-        "metadata": {
-          "arguments": {
-            "operation": "pause"
-          },
-          "used_arguments": {
-            "operation": "pause"
-          }
+        "arguments": {
+          "operation": "pause"
         },
-        "content_type": "function_result",
-        "id": "call_r7f2X9wNhSakFOb8mFkZ4dmf",
         "result": "Washing machine pause.",
-        "name": "washingmachine_control-control_device_operation",
         "function_name": "control_device_operation",
-        "plugin_name": "washingmachine_control",
-        "encoding": null
+        "plugin_name": "washingmachine_control"
       }
     ],
     "predicted_response": "The washing machine has been paused."

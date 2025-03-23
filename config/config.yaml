@@ -1,16 +1,23 @@
 app_name: Agentic-Evals
 version: 1.0.0
 data_generation:
-  num_of_queries: 6
+  num_of_queries: 3
   query_key: query
   input_path: datasets
   input_file: ground_truth.json
   output_path: datasets
   output_file: agent_predicted.json
+data_transformation:
+  input_path: datasets
+  input_file: agent_predicted.json
+  output_path: datasets
+  output_file: agent_predicted_transformed.json
+  schema_path: config
+  schema_file: schema.json 
 pipeline:
   steps:
     - data_generation
-    # - data_transformation
+    - data_transformation
     # - evaluation
     # - reporting
 logging:

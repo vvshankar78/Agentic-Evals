@@ -11,6 +11,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'report'))
 
 # from src.testing import generate_queries_from_groudtruth
 from datagenerator import device_control_agent
+from datatransformer import data_transform
 
 if __name__ == "__main__":
     config = load_config()
@@ -21,6 +22,12 @@ if __name__ == "__main__":
         print('executing device_control_agent')
         asyncio.run(device_control_agent.main())
         print('device_control_agent executed')
+
+    if 'data_transformation' in pipeline_config:
+       print('executing data_transform')
+       data_transform.main()
+       print('data_transform executed')
+
 
     # # Run data_transform.py
     # from datatransformer import data_transform
