@@ -48,7 +48,8 @@ def main():
 
     dataset_path = Path(__file__).resolve().parents[1]
     input_file = os.path.join(dataset_path, data_transform_config["input_path"], data_transform_config["input_file"])
-    output_file = os.path.join(dataset_path, data_transform_config["output_path"], data_transform_config["output_file"])
+    output_file_json = os.path.join(dataset_path, data_transform_config["output_path"], data_transform_config["output_file_json"])
+    output_file_jsonl = os.path.join(dataset_path, data_transform_config["output_path"], data_transform_config["output_file_jsonl"])
 
     with open(input_file, "r", encoding="utf-8") as f:
         input_data = json.load(f)
@@ -57,8 +58,14 @@ def main():
 
     mapped_output = replace_predicted_with_mapped(input_data, mapping_schema)
 
-    with open(output_file, "w", encoding="utf-8") as f:
+    with open(output_file_json, "w", encoding="utf-8") as f:
         json.dump(mapped_output, f, indent=2)
+    
+    # Write the mapped output as JSONL
+    # jsonl_output_file = os.path.join(dataset_path, data_transform_config["output_path"], "agent_output_mapped.jsonl")
+    with open(output_file_jsonl, "w", encoding="utf-8") as f:
+        for item in mapped_output:
+            f.write(json.dumps(item) + "\n")
 
     print("✅ 'predicted_function' replaced with mapped version and saved to agent_output_mapped.json")
 
