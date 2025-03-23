@@ -5,7 +5,7 @@
     "expected_function": [
       {
         "arguments": {
-          "operation": "stop"
+          "operation": "start"
         },
         "result": "Washing machine stop.",
         "function_name": "control_device_operation",
@@ -153,7 +153,7 @@
       },
       {
         "arguments": {
-          "operation": "increase"
+          "operation": "decrease"
         },
         "result": "TV volume increased.",
         "function_name": "adjust_volume",

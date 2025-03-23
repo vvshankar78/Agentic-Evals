@@ -12,6 +12,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'report'))
 # from src.testing import generate_queries_from_groudtruth
 from datagenerator import device_control_agent
 from datatransformer import data_transform
+from evaluator import eval_main
 
 if __name__ == "__main__":
     config = load_config()
@@ -27,6 +28,11 @@ if __name__ == "__main__":
        print('executing data_transform')
        data_transform.main()
        print('data_transform executed')
+
+    if 'evaluation' in pipeline_config:
+        print('executing eval_main')
+        eval_main.main()
+        print('eval_main executed')
 
 
     # # Run data_transform.py
