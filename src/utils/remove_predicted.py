@@ -7,8 +7,6 @@ with open('ground_truth.json', 'r') as file:
 for entry in data:
     if "predicted_function" in entry:
         del entry["predicted_function"]
-    if "response" in entry:
-        del entry["response"]
 
 # Convert back to JSON string
 modified_json = json.dumps(data, indent=2)

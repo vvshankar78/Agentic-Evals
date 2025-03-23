@@ -1,10 +1,3 @@
 turn off washing machine
 start the washing machine
 pause the washing machine
-resume the washing machine
-stop the washing machine
-set the washing machine to quick wash mode
-set the washing machine to delicate mode
-set the washing machine to heavy load mode
-set the washing machine timer to 30 minutes
-set the washing machine timer to 1 hour

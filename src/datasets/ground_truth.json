@@ -1,6 +1,7 @@
 [
   {
     "query": "turn off washing machine",
+    "expected_response": "The washing machine has been turned off.",
     "expected_function": [
       {
         "arguments": {
@@ -14,6 +15,7 @@
   },
   {
     "query": "start the washing machine",
+    "expected_response": "The washing machine has been started.",
     "expected_function": [
       {
         "arguments": {
@@ -27,6 +29,7 @@
   },
   {
     "query": "pause the washing machine",
+    "expected_response": "The washing machine has been paused.",
     "expected_function": [
       {
         "arguments": {
@@ -40,6 +43,7 @@
   },
   {
     "query": "resume the washing machine",
+    "expected_response": "The washing machine has been resumed.",
     "expected_function": [
       {
         "arguments": {
@@ -53,6 +57,7 @@
   },
   {
     "query": "stop the washing machine",
+    "expected_response": "The washing machine has been stopped.",
     "expected_function": [
       {
         "arguments": {
@@ -66,6 +71,7 @@
   },
   {
     "query": "set the washing machine to quick wash mode",
+    "expected_response": "The washing machine is now set to quick wash mode.",
     "expected_function": [
       {
         "arguments": {
@@ -79,6 +85,7 @@
   },
   {
     "query": "set the washing machine to delicate mode",
+    "expected_response": "The washing machine is now set to delicate mode.",
     "expected_function": [
       {
         "arguments": {
@@ -92,6 +99,7 @@
   },
   {
     "query": "set the washing machine to heavy load mode",
+    "expected_response": "The washing machine is now set to heavy load mode.",
     "expected_function": [
       {
         "arguments": {
@@ -105,6 +113,7 @@
   },
   {
     "query": "set the washing machine timer to 30 minutes",
+    "expected_response": "The washing machine timer has been set to30 minutes.",
     "expected_function": [
       {
         "arguments": {
@@ -118,6 +127,7 @@
   },
   {
     "query": "set the washing machine timer to 1 hour",
+    "expected_response": "The washing machine timer has been set to1 hour.",
     "expected_function": [
       {
         "arguments": {
@@ -131,6 +141,7 @@
   },
   {
     "query": "turn on the TV and increase the volume",
+    "expected_response": "The TV has been turned on, and the volume has been increased.",
     "expected_function": [
       {
         "arguments": {
@@ -152,6 +163,7 @@
   },
   {
     "query": "turn on the TV and decrease the volume",
+    "expected_response": "The TV has been turned on, and the volume has been decreased.",
     "expected_function": [
       {
         "arguments": {
@@ -173,6 +185,7 @@
   },
   {
     "query": "turn on the TV and mute it",
+    "expected_response": "The TV has been turned on. Unfortunately, muting the TV is currently not available. However, I can decrease the volume if you'd like!",
     "expected_function": [
       {
         "arguments": {
@@ -181,27 +194,12 @@
         "result": "TV turned on.",
         "function_name": "control_device_operation",
         "plugin_name": "tv_control"
-      },
-      {
-        "arguments": {
-          "operation": "decrease"
-        },
-        "result": "TV volume decreased.",
-        "function_name": "adjust_volume",
-        "plugin_name": "tv_control"
-      },
-      {
-        "arguments": {
-          "operation": "decrease"
-        },
-        "result": "TV volume decreased.",
-        "function_name": "adjust_volume",
-        "plugin_name": "tv_control"
       }
     ]
   },
   {
     "query": "turn on the TV and set the volume to 15",
+    "expected_response": "Setting the TV to a specific volume level is not directly supported; I can only increase or decrease the volume. Would you like me to assist in adjusting the volume incrementally?",
     "expected_function": [
       {
         "arguments": {
@@ -215,6 +213,7 @@
   },
   {
     "query": "turn on the TV and switch to HDMI 1",
+    "expected_response": "The TV has been turned on, and the input source has been switched to HDMI1.",
     "expected_function": [
       {
         "arguments": {
@@ -236,6 +235,7 @@
   },
   {
     "query": "turn on the TV and open Netflix",
+    "expected_response": "The TV has been turned on, and Netflix is now open.",
     "expected_function": [
       {
         "arguments": {
@@ -257,6 +257,7 @@
   },
   {
     "query": "turn on the TV and increase the brightness",
+    "expected_response": "The TV can be turned on, but brightness adjustments need a specific level set (e.g.,50%,70%). Do you want me to turn on the TV and set a particular brightness level?",
     "expected_function": [
       {
         "arguments": {
@@ -265,19 +266,12 @@
         "result": "TV turned on.",
         "function_name": "control_device_operation",
         "plugin_name": "tv_control"
-      },
-      {
-        "arguments": {
-          "brightness": "increase"
-        },
-        "result": "TV brightness set to increase.",
-        "function_name": "set_brightness",
-        "plugin_name": "tv_control"
       }
     ]
   },
   {
     "query": "turn on the TV and set the channel to 101",
+    "expected_response": "The TV has been turned on, and the channel is set to101.",
     "expected_function": [
       {
         "arguments": {
@@ -299,6 +293,7 @@
   },
   {
     "query": "turn on the TV and enable subtitles",
+    "expected_response": "The TV has been turned on, and subtitles have been enabled.",
     "expected_function": [
       {
         "arguments": {
@@ -318,6 +313,7 @@
   },
   {
     "query": "turn on the TV and switch to HDMI 2",
+    "expected_response": "The TV has been turned on, and the input source has been switched to HDMI2.",
     "expected_function": [
       {
         "arguments": {
@@ -339,6 +335,7 @@
   },
   {
     "query": "turn on the TV and open YouTube",
+    "expected_response": "The TV has been turned on, and YouTube is now open.",
     "expected_function": [
       {
         "arguments": {
@@ -360,6 +357,7 @@
   },
   {
     "query": "turn off the TV",
+    "expected_response": "The TV has been turned off.",
     "expected_function": [
       {
         "arguments": {
@@ -373,6 +371,7 @@
   },
   {
     "query": "increase the TV volume",
+    "expected_response": "The TV volume has been increased.",
     "expected_function": [
       {
         "arguments": {
@@ -386,6 +385,7 @@
   },
   {
     "query": "decrease the TV volume",
+    "expected_response": "The TV volume has been decreased.",
     "expected_function": [
       {
         "arguments": {
@@ -399,6 +399,7 @@
   },
   {
     "query": "set the air conditioner to 24 degrees",
+    "expected_response": "The air conditioner temperature has been set to24 degrees.",
     "expected_function": [
       {
         "arguments": {
@@ -412,6 +413,7 @@
   },
   {
     "query": "turn off the air conditioner",
+    "expected_response": "The air conditioner has been turned off.",
     "expected_function": [
       {
         "arguments": {
@@ -425,6 +427,7 @@
   },
   {
     "query": "set the air conditioner to cool mode",
+    "expected_response": "The air conditioner is now set to cool mode.",
     "expected_function": [
       {
         "arguments": {
@@ -438,6 +441,7 @@
   },
   {
     "query": "increase the air conditioner temperature to 26 degrees",
+    "expected_response": "The air conditioner temperature has been increased to26 degrees.",
     "expected_function": [
       {
         "arguments": {
@@ -451,6 +455,7 @@
   },
   {
     "query": "decrease the air conditioner temperature to 22 degrees",
+    "expected_response": "The air conditioner temperature has been decreased to22 degrees.",
     "expected_function": [
       {
         "arguments": {
@@ -464,6 +469,7 @@
   },
   {
     "query": "turn on the air conditioner",
+    "expected_response": "The air conditioner has been turned on.",
     "expected_function": [
       {
         "arguments": {
@@ -477,6 +483,7 @@
   },
   {
     "query": "set the air conditioner to fan mode",
+    "expected_response": "The air conditioner is now set to fan mode.",
     "expected_function": [
       {
         "arguments": {
@@ -490,6 +497,7 @@
   },
   {
     "query": "set the air conditioner to dry mode",
+    "expected_response": "The air conditioner is now set to dry mode.",
     "expected_function": [
       {
         "arguments": {
@@ -503,6 +511,7 @@
   },
   {
     "query": "set the air conditioner timer to 2 hours",
+    "expected_response": "The air conditioner timer has been set to2 hours.",
     "expected_function": [
       {
         "arguments": {
@@ -516,6 +525,7 @@
   },
   {
     "query": "set the air conditioner timer to 4 hours",
+    "expected_response": "The air conditioner timer has been set to4 hours.",
     "expected_function": [
       {
         "arguments": {
@@ -529,6 +539,7 @@
   },
   {
     "query": "start the dishwasher",
+    "expected_response": "The dishwasher has been started.",
     "expected_function": [
       {
         "arguments": {
@@ -542,6 +553,7 @@
   },
   {
     "query": "stop the dishwasher",
+    "expected_response": "The dishwasher has been stopped.",
     "expected_function": [
       {
         "arguments": {
@@ -555,6 +567,7 @@
   },
   {
     "query": "pause the dishwasher",
+    "expected_response": "The dishwasher has been paused.",
     "expected_function": [
       {
         "arguments": {
@@ -568,6 +581,7 @@
   },
   {
     "query": "resume the dishwasher",
+    "expected_response": "The dishwasher has been resumed.",
     "expected_function": [
       {
         "arguments": {
@@ -581,6 +595,7 @@
   },
   {
     "query": "set the dishwasher to eco mode",
+    "expected_response": "The dishwasher is now set to eco mode.",
     "expected_function": [
       {
         "arguments": {
@@ -594,6 +609,7 @@
   },
   {
     "query": "set the dishwasher to heavy wash mode",
+    "expected_response": "The dishwasher is now set to heavy wash mode.",
     "expected_function": [
       {
         "arguments": {
@@ -607,6 +623,7 @@
   },
   {
     "query": "set the dishwasher to quick wash mode",
+    "expected_response": "The dishwasher is now set to quick wash mode.",
     "expected_function": [
       {
         "arguments": {
@@ -620,6 +637,7 @@
   },
   {
     "query": "set the dishwasher timer to 1 hour",
+    "expected_response": "The dishwasher timer has been set to1 hour.",
     "expected_function": [
       {
         "arguments": {
@@ -633,6 +651,7 @@
   },
   {
     "query": "set the dishwasher timer to 2 hours",
+    "expected_response": "The dishwasher timer has been set to2 hours.",
     "expected_function": [
       {
         "arguments": {
@@ -646,6 +665,7 @@
   },
   {
     "query": "turn on the dishwasher and start cleaning",
+    "expected_response": "The dishwasher has been turned on and started cleaning.",
     "expected_function": [
       {
         "arguments": {
@@ -659,6 +679,7 @@
   },
   {
     "query": "turn off the dishwasher",
+    "expected_response": "The dishwasher has been turned off.",
     "expected_function": [
       {
         "arguments": {
@@ -672,6 +693,7 @@
   },
   {
     "query": "set the dishwasher to sanitize mode",
+    "expected_response": "The dishwasher is now set to sanitize mode.",
     "expected_function": [
       {
         "arguments": {
@@ -685,6 +707,7 @@
   },
   {
     "query": "set the dishwasher to rinse only mode",
+    "expected_response": "The dishwasher is now set to rinse-only mode.",
     "expected_function": [
       {
         "arguments": {

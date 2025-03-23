@@ -9,20 +9,13 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'datatransformer'))
 sys.path.append(os.path.join(os.path.dirname(__file__), 'evaluator'))
 sys.path.append(os.path.join(os.path.dirname(__file__), 'report'))
 
-from datagenerator import generate_queries_from_groudtruth
+# from src.testing import generate_queries_from_groudtruth
 from datagenerator import device_control_agent
-
 
 if __name__ == "__main__":
     config = load_config()
     pipeline_config = config['pipeline']['steps']
     print(pipeline_config)
-
-    if 'generate_queries' in pipeline_config:
-        print('executing generate_queries_from_groundtruth')
-        generate_queries_from_groudtruth.extract_queries()
-        print('generate_queries_from_groundtruth executed')
-
   
     if 'data_generation' in pipeline_config:
         print('executing device_control_agent')

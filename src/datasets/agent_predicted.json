@@ -1,6 +1,17 @@
 [
   {
     "query": "turn off washing machine",
+    "expected_response": "The washing machine has been turned off.",
+    "expected_function": [
+      {
+        "arguments": {
+          "operation": "stop"
+        },
+        "result": "Washing machine stop.",
+        "function_name": "control_device_operation",
+        "plugin_name": "washingmachine_control"
+      }
+    ],
     "predicted_function": [
       {
         "ai_model_id": null,
@@ -13,7 +24,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_EIVA6FTNscodBXIsB63VUfs4",
+        "id": "call_NZweTi68kNDsxvubEWQLxurG",
         "result": "Washing machine stop.",
         "name": "washingmachine_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -21,10 +32,21 @@
         "encoding": null
       }
     ],
-    "response": "The washing machine has been turned off."
+    "predicted_response": "The washing machine has been turned off successfully."
   },
   {
     "query": "start the washing machine",
+    "expected_response": "The washing machine has been started.",
+    "expected_function": [
+      {
+        "arguments": {
+          "operation": "start"
+        },
+        "result": "Washing machine start.",
+        "function_name": "control_device_operation",
+        "plugin_name": "washingmachine_control"
+      }
+    ],
     "predicted_function": [
       {
         "ai_model_id": null,
@@ -37,7 +59,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_5VlfZ5jdwO6Sq08ORL7JTpnZ",
+        "id": "call_jUBWSPN0We6FRfMy8aa3zywB",
         "result": "Washing machine start.",
         "name": "washingmachine_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -45,10 +67,21 @@
         "encoding": null
       }
     ],
-    "response": "The washing machine has been started."
+    "predicted_response": "The washing machine has been started successfully."
   },
   {
     "query": "pause the washing machine",
+    "expected_response": "The washing machine has been paused.",
+    "expected_function": [
+      {
+        "arguments": {
+          "operation": "pause"
+        },
+        "result": "Washing machine pause.",
+        "function_name": "control_device_operation",
+        "plugin_name": "washingmachine_control"
+      }
+    ],
     "predicted_function": [
       {
         "ai_model_id": null,
@@ -61,7 +94,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_q2eokbNGlygxE1pj8VwnDXxr",
+        "id": "call_XlvzngTEMVqrSsJomGnlqcv4",
         "result": "Washing machine pause.",
         "name": "washingmachine_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -69,10 +102,21 @@
         "encoding": null
       }
     ],
-    "response": "The washing machine is now paused."
+    "predicted_response": "The washing machine has been paused successfully."
   },
   {
     "query": "resume the washing machine",
+    "expected_response": "The washing machine has been resumed.",
+    "expected_function": [
+      {
+        "arguments": {
+          "operation": "resume"
+        },
+        "result": "Washing machine resume.",
+        "function_name": "control_device_operation",
+        "plugin_name": "washingmachine_control"
+      }
+    ],
     "predicted_function": [
       {
         "ai_model_id": null,
@@ -85,7 +129,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_sfNsJAITALFVTpFHeDY5N8tY",
+        "id": "call_cqRPMi3Dl1gRYsQcY8Q07RCv",
         "result": "Washing machine resume.",
         "name": "washingmachine_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -93,10 +137,21 @@
         "encoding": null
       }
     ],
-    "response": "The washing machine has been resumed."
+    "predicted_response": "The washing machine has been resumed successfully."
   },
   {
     "query": "stop the washing machine",
+    "expected_response": "The washing machine has been stopped.",
+    "expected_function": [
+      {
+        "arguments": {
+          "operation": "stop"
+        },
+        "result": "Washing machine stop.",
+        "function_name": "control_device_operation",
+        "plugin_name": "washingmachine_control"
+      }
+    ],
     "predicted_function": [
       {
         "ai_model_id": null,
@@ -109,7 +164,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_z3N4w4gObm0BX8CWuXgElaNv",
+        "id": "call_qa22YeZlvjjfto9ApId2oq8l",
         "result": "Washing machine stop.",
         "name": "washingmachine_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -117,10 +172,21 @@
         "encoding": null
       }
     ],
-    "response": "The washing machine has been stopped."
+    "predicted_response": "The washing machine has been stopped successfully."
   },
   {
     "query": "set the washing machine to quick wash mode",
+    "expected_response": "The washing machine is now set to quick wash mode.",
+    "expected_function": [
+      {
+        "arguments": {
+          "mode": "quick wash"
+        },
+        "result": "Washing machine set to quick wash mode.",
+        "function_name": "set_mode",
+        "plugin_name": "washingmachine_control"
+      }
+    ],
     "predicted_function": [
       {
         "ai_model_id": null,
@@ -133,7 +199,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_xfIV3OEGwr0SJarJzf8upkmb",
+        "id": "call_UY56uvUAyjgn3JbGnOMW7n0E",
         "result": "Washing machine set to quick wash mode.",
         "name": "washingmachine_control-set_mode",
         "function_name": "set_mode",
@@ -141,102 +207,6 @@
         "encoding": null
       }
     ],
-    "response": "The washing machine is now set to Quick Wash mode."
-  },
-  {
-    "query": "set the washing machine to delicate mode",
-    "predicted_function": [
-      {
-        "ai_model_id": null,
-        "metadata": {
-          "arguments": {
-            "mode": "delicate"
-          },
-          "used_arguments": {
-            "mode": "delicate"
-          }
-        },
-        "content_type": "function_result",
-        "id": "call_RXBtUZQzGcIarhVO2dkYsAnT",
-        "result": "Washing machine set to delicate mode.",
-        "name": "washingmachine_control-set_mode",
-        "function_name": "set_mode",
-        "plugin_name": "washingmachine_control",
-        "encoding": null
-      }
-    ],
-    "response": "The washing machine is now set to Delicate mode."
-  },
-  {
-    "query": "set the washing machine to heavy load mode",
-    "predicted_function": [
-      {
-        "ai_model_id": null,
-        "metadata": {
-          "arguments": {
-            "mode": "heavy load"
-          },
-          "used_arguments": {
-            "mode": "heavy load"
-          }
-        },
-        "content_type": "function_result",
-        "id": "call_h0hCY6UnEWEjMxty3r5KfFay",
-        "result": "Washing machine set to heavy load mode.",
-        "name": "washingmachine_control-set_mode",
-        "function_name": "set_mode",
-        "plugin_name": "washingmachine_control",
-        "encoding": null
-      }
-    ],
-    "response": "The washing machine is now set to Heavy Load mode."
-  },
-  {
-    "query": "set the washing machine timer to 30 minutes",
-    "predicted_function": [
-      {
-        "ai_model_id": null,
-        "metadata": {
-          "arguments": {
-            "time": "30 minutes"
-          },
-          "used_arguments": {
-            "time": "30 minutes"
-          }
-        },
-        "content_type": "function_result",
-        "id": "call_twGw2gKZjMDxGETAUuJzSuwU",
-        "result": "Washing machine timer set to 30 minutes.",
-        "name": "washingmachine_control-set_timer",
-        "function_name": "set_timer",
-        "plugin_name": "washingmachine_control",
-        "encoding": null
-      }
-    ],
-    "response": "The washing machine timer has been set to30 minutes."
-  },
-  {
-    "query": "set the washing machine timer to 1 hour",
-    "predicted_function": [
-      {
-        "ai_model_id": null,
-        "metadata": {
-          "arguments": {
-            "time": "1 hour"
-          },
-          "used_arguments": {
-            "time": "1 hour"
-          }
-        },
-        "content_type": "function_result",
-        "id": "call_Am1yNPyTs3r9nodquSV8Kkxw",
-        "result": "Washing machine timer set to 1 hour.",
-        "name": "washingmachine_control-set_timer",
-        "function_name": "set_timer",
-        "plugin_name": "washingmachine_control",
-        "encoding": null
-      }
-    ],
-    "response": "The washing machine timer has been set to1 hour."
+    "predicted_response": "The washing machine has been set to quick wash mode successfully."
   }
 ]

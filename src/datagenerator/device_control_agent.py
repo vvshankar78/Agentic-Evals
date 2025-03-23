@@ -1,6 +1,7 @@
 import asyncio
 import json
-import sys, os
+import sys
+import os
 from pathlib import Path
 import yaml
 from dotenv import load_dotenv
@@ -19,6 +20,8 @@ from plugins.control_plugins import (
     DishwasherControlPlugin,
     WashingMachineControlPlugin
 )
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from utils.load_config import load_config
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from logging_tracing import setup_telemetry
@@ -57,51 +60,58 @@ agent = ChatCompletionAgent(
     arguments=KernelArguments(settings=settings),
 )
 
-def load_config(config_file: str) -> dict:
-    """Load YAML configuration from the given file path."""
-    with open(config_file, 'r') as file:
-        return yaml.safe_load(file)
-
 async def main():
-    # Resolve base and configuration paths
-    base_path = Path(__file__).resolve().parents[2]
-    config_path = base_path / 'config' / 'config.yaml'
-    config = load_config(str(config_path))
+    # Load configuration settings
+    config = load_config()
 
     if config is None:
         raise ValueError("Configuration file not loaded properly.")
+    
 
-    # Read user input queries from file
+    # Define file paths based on configuration settings
     dataset_path = Path(__file__).resolve().parents[1]
-    queries_path = dataset_path / config['data_generation']['input_path'] / config['data_generation']['input_file']
-    with open(queries_path, 'r') as file:
-        user_inputs = [line.strip() for line in file.readlines()]
+    input_file = os.path.join(dataset_path, config["data_generation"]["input_path"], config["data_generation"]["input_file"])
+    num_of_queries = config["data_generation"]["num_of_queries"]
+    query_key = config["data_generation"]["query_key"]
+
+    # Read the ground_truth.json file containing input data
+    with open(input_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
 
     chat_history = ChatHistory()
     all_results = []
 
     # Process each input through the agent
-    for user_input in user_inputs:
-        chat_history.add_user_message(user_input)
+    for item in data:
+        if query_key in item:
+            user_input = item[query_key]
+            if num_of_queries != "all" and len(all_results) >= num_of_queries:
+                break
 
-        response_content = ""
-        output_data = {"query": user_input}
+            chat_history.add_user_message(user_input)
 
-        async for content in agent.invoke_stream(chat_history):
-            # Capture any function result returned by the agent
-            if any(isinstance(item, FunctionResultContent) for item in content.items):
-                output_data["predicted_function"] = [item.dict() for item in content.items]
+            response_content = ""
+            output_data = {
+                "query": user_input, 
+                "expected_response": item.get("expected_response", ""), 
+                "expected_function": item.get("expected_function", [])
+            }
 
-            # Capture plain text response (not function call or result)
-            if not any(isinstance(item, (FunctionCallContent, FunctionResultContent)) for item in content.items) and content.content.strip():
-                response_content += content.content
+            async for content in agent.invoke_stream(chat_history):
+                # Capture any function result returned by the agent
+                if any(isinstance(item, FunctionResultContent) for item in content.items):
+                    output_data["predicted_function"] = [item.dict() for item in content.items]
 
-        if response_content:
-            output_data["response"] = response_content
-            print('Query:', output_data['query'])
-            print('response:', output_data['response'])
+                # Capture plain text response (not function call or result)
+                if not any(isinstance(item, (FunctionCallContent, FunctionResultContent)) for item in content.items) and content.content.strip():
+                    response_content += content.content
 
-        all_results.append(output_data)
+            if response_content:
+                output_data["predicted_response"] = response_content
+                print('Query:', output_data['query'])
+                print('response:', output_data['predicted_response'])
+
+            all_results.append(output_data)
 
     # Write all output results to a JSON file
     output_path = dataset_path / config['data_generation']['output_path'] / config['data_generation']['output_file']
