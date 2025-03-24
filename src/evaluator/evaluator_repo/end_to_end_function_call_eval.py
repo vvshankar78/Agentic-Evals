@@ -9,7 +9,7 @@ class EndToEndFunctionCallEvaluator:
                 "Plugin_name_accuracy": compare_field(expected, predicted, "plugin_name"), 
                 "Function_name_accuracy": compare_field(expected, predicted, "function_name"),
                 "Arguments_accuracy": compare_field(expected, predicted, "arguments"),
-                # "itemwise_arguments_accuracy": compare_field_itemwise(expected, predicted, "arguments"),
-                # "itemwise_plugin_accuracy": compare_field_itemwise(expected, predicted, "plugin_name"),
+                "Itemwise_arguments_accuracy": compare_field_itemwise(expected, predicted, "arguments"),
+                "Itemwise_plugin_accuracy": compare_field_itemwise(expected, predicted, "plugin_name"),
                 "Overall_accuracy": compare_full_match(expected, predicted),
                 } 

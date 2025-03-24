@@ -17,6 +17,17 @@ def compare_field_itemwise(expected, predicted, field):
     1 = match, 0 = no match
     """
     result = []
+
+    # Case 1: predicted is empty
+    if not predicted:
+        return [0] * len(expected)
+
+    # Case 2: length mismatch
+    if len(expected) != len(predicted):
+        return [0] * len(expected)
+
+    # Case 3: field-by-field comparison
     for e, p in zip(expected, predicted):
         result.append(1 if e.get(field) == p.get(field) else 0)
+
     return result

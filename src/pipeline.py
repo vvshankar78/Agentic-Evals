@@ -13,6 +13,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'report'))
 from datagenerator import device_control_agent
 from datatransformer import data_transform
 from evaluator import eval_main
+from reportgenerator import generate_report
 
 if __name__ == "__main__":
     config = load_config()
@@ -33,24 +34,15 @@ if __name__ == "__main__":
         print('executing eval_main')
         eval_main.main()
         print('eval_main executed')
+    
+    if 'reporting' in pipeline_config:
+        print('executing report generation')
+        generate_report.main()
+        print('report generation executed')
+        
+    print('pipeline executed successfully')
 
-
-    # # Run data_transform.py
-    # from datatransformer import data_transform
-    # print('executing data_transform')
-    # data_transform.main()
-    # print('data_transform executed')
-
-    # # Run eval_main.py
-    # from evaluator import eval_main
-    # print('executing eval_main')
-    # eval_main.main()
-    # print('eval_main executed')
-
-
-    # from report import generate_report
-    # print('executing generate_report')
-    # generate_report.main()
-    # print('generate_report executed')
+  
+ 
 
 

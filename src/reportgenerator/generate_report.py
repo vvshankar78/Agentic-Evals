@@ -263,10 +263,6 @@ def generate_report(rows, metrics, template_path, output_path):
         f.write(html_content)
 
 def main():
-    # # Create directories if they don't exist
-    # os.makedirs('templates', exist_ok=True)
-    # os.makedirs('output', exist_ok=True)
-
 
     config = load_config()
     report_config = config["report"]
@@ -278,10 +274,17 @@ def main():
         rows, metrics = load_data(input_file)
         print("Data loaded successfully.")
         # Generate report
-        template_path = os.path.join(os.path.dirname(__file__), 'report_template.html')  # Ensure correct path
-        output_path = os.path.join(os.path.dirname(__file__), 'output_report.html')
-        generate_report(rows, metrics, template_path, output_path)
-        print(f"Report generated successfully at {output_path}")
+        template_path = os.path.join(os.path.dirname(__file__), report_config["template_path"], report_config["template_file"])  # Ensure correct path
+
+        output_folder = os.path.join(dataset_path, report_config["output_path"])
+        if not os.path.exists(output_folder):
+            os.makedirs(output_folder)
+
+        output_file = os.path.join(output_folder, report_config["output_file"])
+
+        generate_report(rows, metrics, template_path, output_file)
+        print(f"Report generated successfully at {output_file}")
+
     except FileNotFoundError as e:
         print(e)
 
