@@ -107,9 +107,7 @@ Before getting started, ensure you have the following:
 
 ### Sample Outputs
 
-Once you run the pipeline, a sample evaluation report is generated and saved as an HTML file. You can find the report at:
-
-[Download evaluation_report.html](src/report/evaluation_report.html)
+Once you run the pipeline, a sample evaluation report is generated and saved as an HTML file. 
 
 You can find the generated evaluation report HTML file attached below:
 ```
