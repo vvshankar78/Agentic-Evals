@@ -1,7 +1,18 @@
-# Agentic-Eval-Pipeline
+# Evaluation of Agentic Systems using Azure AI Foundry
 
 ## Overview
+Agents are AI models with memories that communicate via messages. They can interact with themselves, other agents, or the human user, these messages include text, multimodalities, and tools or function calls, forming a chat history/thread/trajectory. Evaluations for these Agentic systems are crucial to ensure they function as intended, are safe, reliable, and perform optimally under varying conditions. 
+
+This framework provides a step-by-step approch to building a pipeline to Evaluate agentic system using Azure AI Foundry, using single agent with multiple plugins from Sematic Kernel as an example.  
+
+Agentic system's can itself be quite complex and evaluating every stage of their architecture could be quite a difficult task to analyze. To solve this issue, this repository provides a reporting framework using html report locally to analyze, visualize and share the evaluation results to various stake holders. 
+
+## Agentic Evaluation Pipeline (Inner Loop)
+Agentic systems can range from single agents with tool calling to complex multi-agent systems that communicate to complete tasks. Building an evaluation pipeline for such systems starts with creating ground truth datasets based on real-world usage. Inputs are fed to agentic systems, and outputs—either end responses or inner workings like function calls, agent selection, and communication—are evaluated. Extracting these inner details is crucial for robust evaluation. Evaluators compare predicted data to ground truth data, scoring them accordingly. Currently, specialized evaluators for agentic systems need to be custom-built, as existing AI foundry tools support RAG and chatbot applications only. Finally, evaluation results are stored and visualized
+
 Agentic-Eval-Pipeline is a Python-based framework for building and evaluating agentic systems. It provides a modular and scalable structure for creating evaluation pipelines.
+
+![Agentic Evaluation Pipeline](assets/Eval-pipeline.png)
 
 ## Folder Structure
 ```
