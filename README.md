@@ -1,13 +1,12 @@
 # Evaluation of Agentic Systems using Azure AI Foundry
 
 Agents are AI models with memories that communicate via messages. They can interact with themselves, other agents, or the human user, these messages include text, multimodalities, and tools or function calls, forming a chat history/thread/trajectory.
-Agentic systems can range from single agents with tool calling to complex multi-agent systems that communicate to complete tasks. Building an evaluation pipeline for such systems starts with creating ground truth datasets based on real-world usage. 
 
-Agentic system's can itself be quite complex and evaluating every stage of their architecture could be quite a difficult task to analyze. Evaluations for these Agentic systems are crucial to ensure they function as intended, are safe, reliable, and perform optimally under varying conditions. 
+Agentic systems can range from single agents with tool calling to complex multi-agent systems that communicate to complete tasks. Building an evaluation pipeline for such systems starts with creating ground truth datasets based on real-world usage. 
 
 This framework provides a step-by-step approch to building a pipeline to Evaluate agentic system using Azure AI Foundry, using single agent with multiple plugins from Sematic Kernel as an example. This repository provides a reporting framework using html report locally to analyze, visualize and share the evaluation results to various stake holders. 
 
-## Agentic Evaluation Pipeline (Inner Loop)
+## 1. Agentic Evaluation Pipeline (Inner Loop)
 Inputs are fed to agentic systems, and outputs—either end responses or inner workings like function calls, agent selection, and communication—are evaluated.
 Extracting these inner details is crucial for robust evaluation. Evaluators compare predicted data to ground truth data, scoring them accordingly. 
 Currently, specialized evaluators for agentic systems need to be custom-built, as existing AI foundry tools support RAG and chatbot applications only. 
@@ -15,9 +14,11 @@ Finally, evaluation results are stored and visualized both in AI Foundry's evalu
 
 Agentic-Eval-Pipeline is a Python-based framework for building and evaluating agentic systems.
 
-![Agentic Evaluation Pipeline](assets/Eval-pipeline.png)
 
-## Folder Structure
+## 2. Folder Structure
+
+The repository is organized as follows:
+
 ```
 project-root/
 │
@@ -34,11 +35,24 @@ project-root/
 │   ├── settings.py     # General settings
 │   └── config.yaml     # YAML configuration file
 │
+├── assets/             # Assets like images or diagrams
+│   └── Eval-pipeline.png # Diagram of the evaluation pipeline
+│
 ├── requirements.txt    # Python dependencies
 ├── .gitignore          # Git ignore rules
 ├── README.md           # Project documentation
 └── LICENSE             # License file
 ```
+
+## 3. Prerequisites
+Before getting started, ensure you have the following:
+
+- Azure Subscription: Access to an Azure subscription with the necessary permissions.
+- Azure CLI: Installed and configured on your local machine.
+- Azure AI Foundry - Hub and Project created with model (GPT4o) deployed and Blob storage link set up. Refer [Azure AI Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-ai-foundry#work-in-an-azure-ai-foundry-project).
+- Python 3.11 or above
+- Git: For version control and cloning the repository.
+
 
 ## Installation
 1. Clone the repository:
@@ -66,3 +80,6 @@ project-root/
 
 ## License
 ...existing code...
+
+## Links
+AI Foundry: https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-ai-foundry#work-in-an-azure-ai-foundry-project
