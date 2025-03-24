@@ -67,28 +67,29 @@ Before getting started, ensure you have the following:
    ```bash
    git clone https://github.com/vvshankar78/Agentic-Evals.git
    ```
-2. Set up a virtual environment:
+2. Navigate to the project directory:
+   ```bash
+   cd Agentic-Evals
+   ```
+3. Set up a virtual environment:
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
-3. Navigate to the project directory:
-   ```bash
-   cd Agentic-Evals
-   ```
-3. Install dependencies:
+
+4. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-4. Log in to Azure using Azure CLI:
+5. Log in to Azure using Azure CLI:
    ```bash
    az login
    ```
-5. Run the pipeline:
+6. Run the pipeline:
    ```bash
    python src/pipeline.py
    ```
-6. Customize the pipeline by modifying the configuration file located in the `config/` folder. Update `config/settings.py` or `config/config.yaml` to adjust parameters such as model settings, data paths, or evaluation criteria as per your requirements.
+7. Customize the pipeline by modifying the configuration file located in the `config/` folder. Update `config/settings.py` or `config/config.yaml` to adjust parameters such as model settings, data paths, or evaluation criteria as per your requirements.
 
 
 
