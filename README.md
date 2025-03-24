@@ -93,7 +93,15 @@ Before getting started, ensure you have the following:
    ```bash
    python src/pipeline.py
    ```
-7. Customize the pipeline by modifying the configuration file located in the `config/` folder. Update `config/settings.py` or `config/config.yaml` to adjust parameters such as model settings, data paths, or evaluation criteria as per your requirements.
+7. Customize the pipeline by modifying the configuration file located in the `config/` folder. Update `config/settings.py` or `config/config.yaml` to adjust parameters such as model settings, data paths, or evaluation criteria as per your requirements. The pipeline steps defined in config.yaml file is shown below. 
+   ```
+pipeline:
+  steps:
+    - data_generation
+    - data_transformation
+    - evaluation
+    - reporting
+   ```
 
 
 
