@@ -38,16 +38,15 @@ project-root/
 │   └── report_generator/ # Code for generating reports
 │
 ├── config/             # Configuration files
-│   ├── settings.py     # General settings
 │   └── config.yaml     # YAML configuration file
+│   └── mapping_schema.json  # Schema for mapping agent output to ground truth function call
 │
 ├── assets/             # Assets like images or diagrams
 │   └── Eval-pipeline.png # Diagram of the evaluation pipeline
 │
 ├── requirements.txt    # Python dependencies
 ├── .gitignore          # Git ignore rules
-├── README.md           # Project documentation
-└── LICENSE             # License file
+└── README.md           # Project documentation
 ```
 
 ## 3. Prerequisites
