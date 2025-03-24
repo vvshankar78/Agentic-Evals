@@ -61,8 +61,12 @@ Before getting started, ensure you have the following:
 - Python 3.11 or above
 - Git: For version control and cloning the repository.
 
+## 5. Azure Features Used
+ - Azure AI Foundry - GPT4o, Evaluation, tracing
+ - App Insights - logging and tracing
 
-## 4. Installation
+
+## 6. Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/vvshankar78/Agentic-Evals.git
