@@ -43,6 +43,12 @@ project-root/
 │
 ├── assets/             # Assets like images or diagrams
 │   └── Eval-pipeline.png # Diagram of the evaluation pipeline
+│   ├── Report-screenshots1.png # Overview of evaluation metrics
+│   ├── Reports-screenshot2.png # Agent communication visualization
+│   └── Reports-screenshot3.png # Function call analysis
+│
+├── assets/             # Assets like images or diagrams
+│   └── Eval-pipeline.png # Diagram of the evaluation pipeline
 │
 ├── requirements.txt    # Python dependencies
 ├── .gitignore          # Git ignore rules
