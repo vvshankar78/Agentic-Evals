@@ -30,7 +30,7 @@ project-root/
 │
 ├── src/                # Source code for the framework
 │   ├── __init__.py     # Makes src a package
-│   ├── pipeline.py     # Core pipeline logic
+│   ├── main.py     # Core pipeline logic
 │   ├── data_generator/ # Code for generating data
 │   ├── data_transforms/ # Code for transforming data
 │   ├── evaluator/      # Code for evaluation logic
@@ -89,9 +89,9 @@ Before getting started, ensure you have the following:
    ```bash
    az login
    ```
-6. Run the pipeline:
+6. Run the main pipeline:
    ```bash
-   python src/pipeline.py
+   python src/main.py
    ```
 7. Customize the pipeline by modifying the configuration file located in the `config/` folder. Update `config/settings.py` or `config/config.yaml` to adjust parameters such as model settings, data paths, or evaluation criteria as per your requirements. The pipeline steps defined in config.yaml file is shown below. The pipeline can continue from previous step (if already run). For example if data_generation is already run, we can continue by removing data_generation from pipeline in config. 
    ```bash 
@@ -107,7 +107,7 @@ Before getting started, ensure you have the following:
 
 ### Sample Outputs
 
-Once you run the pipeline, a sample evaluation report is generated and saved as an HTML file. 
+Once you run the main pipeline, a sample evaluation report is generated and saved as an HTML file. 
 
 You can find the generated evaluation report HTML file attached below:
 ```
