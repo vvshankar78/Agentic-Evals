@@ -3,7 +3,7 @@ import sys
 import asyncio
 import yaml
 from utils.load_config import load_config
-from utils.logger import logger  # import logger
+from utils.logger import logger
 
 # Add the paths to the system path
 sys.path.append(os.path.join(os.path.dirname(__file__), 'datagenerator'))
