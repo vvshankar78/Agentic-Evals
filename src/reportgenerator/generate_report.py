@@ -272,7 +272,6 @@ def main():
     
     try:
         rows, metrics = load_data(input_file)
-        print("Data loaded successfully.")
         # Generate report
         template_path = os.path.join(os.path.dirname(__file__), report_config["template_path"], report_config["template_file"])  # Ensure correct path
 

@@ -24,7 +24,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_7J9t2rV3SYZxttKMX1CH7c5u",
+        "id": "call_bC8h9w2ETvMW8eYVdiZhDhD4",
         "result": "Washing machine stop.",
         "name": "washingmachine_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -59,7 +59,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_UWrWVt6tHklGlORxmX2hncAX",
+        "id": "call_IekKZVuXmmpLcsQXh9nxUi6d",
         "result": "Washing machine start.",
         "name": "washingmachine_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -94,7 +94,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_Pa233LwCY807KkqcriH4uZPP",
+        "id": "call_rGevzB3kIm4swfSyECeeyOYZ",
         "result": "Washing machine pause.",
         "name": "washingmachine_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -129,7 +129,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_QkSFOEyrkbUEZASNazvgs2wA",
+        "id": "call_adQjjEQPhHfla9S6mzgCAMT1",
         "result": "Washing machine resume.",
         "name": "washingmachine_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -164,7 +164,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_8xD9vZaLRjJ4VzSjgOwTc5MF",
+        "id": "call_6LfEOhJ6FPXHUYUHbd6ptskm",
         "result": "Washing machine stop.",
         "name": "washingmachine_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -199,7 +199,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_Qxtz1fDFBadN9YtBccYp0tFJ",
+        "id": "call_paPztC3J4O5Akiu89gk0vDHt",
         "result": "Washing machine set to quick wash mode.",
         "name": "washingmachine_control-set_mode",
         "function_name": "set_mode",
@@ -207,7 +207,7 @@
         "encoding": null
       }
     ],
-    "predicted_response": "The washing machine is now set to quick wash mode."
+    "predicted_response": "The washing machine has been set to quick wash mode."
   },
   {
     "query": "set the washing machine to delicate mode",
@@ -234,7 +234,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_Wh8cEaTwQiIof0VZhR9WoW2C",
+        "id": "call_LM7fPeybFzXMQ2Feh0wcZJj2",
         "result": "Washing machine set to delicate mode.",
         "name": "washingmachine_control-set_mode",
         "function_name": "set_mode",
@@ -269,7 +269,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_Je5thjVR4gdNGmu4Xlr0bphe",
+        "id": "call_AVGtCIbJjMcwTIruD9k8ZB6j",
         "result": "Washing machine set to heavy load mode.",
         "name": "washingmachine_control-set_mode",
         "function_name": "set_mode",
@@ -277,7 +277,7 @@
         "encoding": null
       }
     ],
-    "predicted_response": "The washing machine is now set to heavy load mode."
+    "predicted_response": "The washing machine has been set to heavy load mode."
   },
   {
     "query": "set the washing machine timer to 30 minutes",
@@ -304,7 +304,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_UFKP3kBczTIRP8ZFri9Ku4RV",
+        "id": "call_okRR8bOJiWnTLeER61Loc6PB",
         "result": "Washing machine timer set to 30 minutes.",
         "name": "washingmachine_control-set_timer",
         "function_name": "set_timer",
@@ -312,7 +312,7 @@
         "encoding": null
       }
     ],
-    "predicted_response": "The washing machine timer is now set to30 minutes."
+    "predicted_response": "The washing machine timer has been set to30 minutes."
   },
   {
     "query": "set the washing machine timer to 1 hour",
@@ -339,7 +339,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_xjT7buzNmGUIM5q7Gxg1mbFI",
+        "id": "call_tLps4NT8nx8jvbhh9cPkglY2",
         "result": "Washing machine timer set to 1 hour.",
         "name": "washingmachine_control-set_timer",
         "function_name": "set_timer",
@@ -347,7 +347,7 @@
         "encoding": null
       }
     ],
-    "predicted_response": "The washing machine timer is now set to1 hour."
+    "predicted_response": "The washing machine timer has been set to1 hour."
   },
   {
     "query": "turn on the TV and increase the volume",
@@ -382,7 +382,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_daZ2eSQ9MroPhpgiWizwNFXM",
+        "id": "call_18YXN5dF4FlVtapNtcVDrKdf",
         "result": "TV turned on.",
         "name": "tv_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -400,7 +400,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_ruhSpXadM3FWv3Ro9IUO5ew6",
+        "id": "call_STTRJrQrQzp2Xz1BLjfxm3Do",
         "result": "TV volume increased.",
         "name": "tv_control-adjust_volume",
         "function_name": "adjust_volume",
@@ -443,7 +443,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_lfD6LKBKyPvkWltNJbQB7Qwe",
+        "id": "call_osqY0mXUsoFSsGny2ENxifTD",
         "result": "TV turned on.",
         "name": "tv_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -461,7 +461,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_LEcn2bEc6bKiCwvymAhZrwgq",
+        "id": "call_TsBjgnvBufbKxGmRjoGo1DPq",
         "result": "TV volume decreased.",
         "name": "tv_control-adjust_volume",
         "function_name": "adjust_volume",
@@ -496,7 +496,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_pUMp8tGyOWaW46bevLO5KjHg",
+        "id": "call_xqdyZ0KSaznp2uX6BgvMJstv",
         "result": "TV turned on.",
         "name": "tv_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -514,7 +514,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_C1AvEc4bPZF619DO2Wsp0tFq",
+        "id": "call_Z7kU5mCVv6y8HNOAzxqnRRch",
         "result": "TV volume decreased.",
         "name": "tv_control-adjust_volume",
         "function_name": "adjust_volume",
@@ -522,7 +522,7 @@
         "encoding": null
       }
     ],
-    "predicted_response": "The TV has been turned on, and the volume has been decreased. If you'd like to further reduce it to mute, you can continue decreasing the volume."
+    "predicted_response": "The TV has been turned on, and the volume has been decreased. Unfortunately, I don't have a direct option to mute the TV, but reducing the volume may still assist."
   },
   {
     "query": "turn on the TV and set the volume to 15",
@@ -537,7 +537,27 @@
         "plugin_name": "tv_control"
       }
     ],
-    "predicted_response": "Currently, I can only adjust the volume up or down incrementally. To set it at a specific volume level like15, you'll need to do it through your TV\u2019s control settings or remote. Would you like me to just increase or decrease the volume for now?"
+    "predicted_function": [
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "operation": "on"
+          },
+          "used_arguments": {
+            "operation": "on"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_YY5gkCY4NhY7a8Y4UR2Bpdkd",
+        "result": "TV turned on.",
+        "name": "tv_control-control_device_operation",
+        "function_name": "control_device_operation",
+        "plugin_name": "tv_control",
+        "encoding": null
+      }
+    ],
+    "predicted_response": "The TV has been turned on. However, I cannot directly set a specific volume level, but you can manually adjust it to reach15."
   },
   {
     "query": "turn on the TV and switch to HDMI 1",
@@ -572,7 +592,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_0CXesC7gVw0XSbuHJ7I69440",
+        "id": "call_cFz4KILM6l22UHMXY3Tf7xHh",
         "result": "TV turned on.",
         "name": "tv_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -590,7 +610,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_OezNnt8j11wpRjXUuTHJd8QL",
+        "id": "call_yjAnYuvTkoE4dg4E4m6EJ9y7",
         "result": "TV input switched to HDMI 1.",
         "name": "tv_control-switch_input_source",
         "function_name": "switch_input_source",
@@ -633,7 +653,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_XJHkm6Z43fJJlGULdvmg5LQw",
+        "id": "call_AAfsmPQl1Bdra1IP08liySjR",
         "result": "TV turned on.",
         "name": "tv_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -651,7 +671,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_bAtB0qtkf13ZQX2e7tNVMqWT",
+        "id": "call_ldwVHxTSpIntMPSkb0DDhKtd",
         "result": "Netflix opened on the TV.",
         "name": "tv_control-open_application",
         "function_name": "open_application",
@@ -659,7 +679,7 @@
         "encoding": null
       }
     ],
-    "predicted_response": "The TV has been turned on, and Netflix is now open. Enjoy your viewing!"
+    "predicted_response": "The TV has been turned on, and Netflix is now open."
   },
   {
     "query": "turn on the TV and increase the brightness",
@@ -674,7 +694,45 @@
         "plugin_name": "tv_control"
       }
     ],
-    "predicted_response": "I can turn on the TV, but the brightness adjustment requires a specific level to be set. Could you let me know the desired brightness level, or should I proceed only with turning on the TV for now?"
+    "predicted_function": [
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "operation": "on"
+          },
+          "used_arguments": {
+            "operation": "on"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_cTB9MTzSzuyGKwxWbY4vC4pF",
+        "result": "TV turned on.",
+        "name": "tv_control-control_device_operation",
+        "function_name": "control_device_operation",
+        "plugin_name": "tv_control",
+        "encoding": null
+      },
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "brightness": "increase"
+          },
+          "used_arguments": {
+            "brightness": "increase"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_OhIlDSQIaX3x5XQWFWjhxj6y",
+        "result": "TV brightness set to increase.",
+        "name": "tv_control-set_brightness",
+        "function_name": "set_brightness",
+        "plugin_name": "tv_control",
+        "encoding": null
+      }
+    ],
+    "predicted_response": "The TV has been turned on, and its brightness level has been increased."
   },
   {
     "query": "turn on the TV and set the channel to 101",
@@ -709,7 +767,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_vV5aPDeFSH7rCrOIbbT7wma7",
+        "id": "call_pKLi9eftG6A8GL3E2R5gwhym",
         "result": "TV turned on.",
         "name": "tv_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -727,7 +785,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_YjEYlZvO8fvv7NTfEUHFCXHU",
+        "id": "call_9kjI7imecOhPhqqR0A5HnJEd",
         "result": "TV channel set to 101.",
         "name": "tv_control-set_channel",
         "function_name": "set_channel",
@@ -735,7 +793,7 @@
         "encoding": null
       }
     ],
-    "predicted_response": "The TV has been turned on, and the channel is now set to101."
+    "predicted_response": "The TV has been turned on, and the channel has been set to101."
   },
   {
     "query": "turn on the TV and enable subtitles",
@@ -768,7 +826,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_I4KjJ1EECz9Ofa7bCzujP355",
+        "id": "call_zEwi42nUP5GNg639hYZYpGEu",
         "result": "TV turned on.",
         "name": "tv_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -782,7 +840,7 @@
           "used_arguments": {}
         },
         "content_type": "function_result",
-        "id": "call_WdpacYAijvwdYUqjQyt4WEx7",
+        "id": "call_MBFbYOt5x6MWgrGo0Ho9IUMS",
         "result": "Subtitles enabled on the TV.",
         "name": "tv_control-enable_subtitles",
         "function_name": "enable_subtitles",
@@ -825,7 +883,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_ByiP8zWrMiImrj1CcB9lXCNr",
+        "id": "call_xfiqA903Ca2VNZg0MXMhjhNq",
         "result": "TV turned on.",
         "name": "tv_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -843,7 +901,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_uCR3HEHCyyJwnfcNPESEk2zA",
+        "id": "call_Huxczses6nSiMgRMlt9d1uJN",
         "result": "TV input switched to HDMI 2.",
         "name": "tv_control-switch_input_source",
         "function_name": "switch_input_source",
@@ -886,7 +944,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_7a4Z9PRRQdLjvjxoOTkEC1Gn",
+        "id": "call_qa5jYTS4iZHJBmHIAFE0sTWU",
         "result": "TV turned on.",
         "name": "tv_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -904,7 +962,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_yxRAVjnyY45GJMT2vk0sy7yQ",
+        "id": "call_pOXWspII5PiwsMBjfCrWBkQ2",
         "result": "YouTube opened on the TV.",
         "name": "tv_control-open_application",
         "function_name": "open_application",
@@ -912,7 +970,7 @@
         "encoding": null
       }
     ],
-    "predicted_response": "The TV has been turned on, and YouTube is now open. Enjoy your viewing!"
+    "predicted_response": "The TV has been turned on, and YouTube is now open."
   },
   {
     "query": "turn off the TV",
@@ -939,7 +997,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_WpKPPTEZXPEvp2Ahnnbox68b",
+        "id": "call_Q3Mw1ptTT3K1xOqpvGk0sNqL",
         "result": "TV turned off.",
         "name": "tv_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -974,7 +1032,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_learCOM2z4smv4bOg9TOfJq4",
+        "id": "call_EZ1p6pYTbMP3oIVgVvnWj1O5",
         "result": "TV volume increased.",
         "name": "tv_control-adjust_volume",
         "function_name": "adjust_volume",
@@ -1009,7 +1067,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_j7qhZVnBPOSye7qe34mvnfH5",
+        "id": "call_5A3lt3ZBkFCPyOV7Gu5CFBGE",
         "result": "TV volume decreased.",
         "name": "tv_control-adjust_volume",
         "function_name": "adjust_volume",
@@ -1044,7 +1102,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_YsGdMbZKN0MEilxhAPCYaD57",
+        "id": "call_TmEsgJoELcqurGti1KzPuP22",
         "result": "Air conditioner temperature set to 24 degrees.",
         "name": "ac_control-set_temperature",
         "function_name": "set_temperature",
@@ -1052,7 +1110,7 @@
         "encoding": null
       }
     ],
-    "predicted_response": "The air conditioner temperature is now set to24 degrees."
+    "predicted_response": "The air conditioner temperature has been set to24 degrees."
   },
   {
     "query": "turn off the air conditioner",
@@ -1079,7 +1137,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_mB2xvVxpHGVcb5Mt1iD9X0z1",
+        "id": "call_3QAIIrrxR6i9bphgSjrUvwxx",
         "result": "Air conditioner turned off.",
         "name": "ac_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -1114,7 +1172,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_8YoBpyOk81ARqBmANxkkY9Gj",
+        "id": "call_IhJDGjzmOQXp3NOKtdLts0hh",
         "result": "Air conditioner set to cool mode.",
         "name": "ac_control-set_mode",
         "function_name": "set_mode",
@@ -1142,24 +1200,22 @@
         "ai_model_id": null,
         "metadata": {
           "arguments": {
-            "operation": "increase",
-            "value": "2"
+            "temperature": "26"
           },
           "used_arguments": {
-            "operation": "increase",
-            "value": "2"
+            "temperature": "26"
           }
         },
         "content_type": "function_result",
-        "id": "call_GupZwnQlc48Gg3exx9AAq6C2",
-        "result": "Air conditioner temperature increased by 2 degrees.",
-        "name": "ac_control-adjust_temperature",
-        "function_name": "adjust_temperature",
+        "id": "call_W8Rn6k2YR1bRdWwzXct1PXRS",
+        "result": "Air conditioner temperature set to 26 degrees.",
+        "name": "ac_control-set_temperature",
+        "function_name": "set_temperature",
         "plugin_name": "ac_control",
         "encoding": null
       }
     ],
-    "predicted_response": "The air conditioner temperature has been increased by2 degrees and is now set to26 degrees."
+    "predicted_response": "The air conditioner temperature has been increased to26 degrees."
   },
   {
     "query": "decrease the air conditioner temperature to 22 degrees",
@@ -1179,24 +1235,22 @@
         "ai_model_id": null,
         "metadata": {
           "arguments": {
-            "operation": "decrease",
-            "value": "4"
+            "temperature": "22"
           },
           "used_arguments": {
-            "operation": "decrease",
-            "value": "4"
+            "temperature": "22"
           }
         },
         "content_type": "function_result",
-        "id": "call_rzExJyHRQQRtEe393WhTE208",
-        "result": "Air conditioner temperature decreased by 4 degrees.",
-        "name": "ac_control-adjust_temperature",
-        "function_name": "adjust_temperature",
+        "id": "call_rMVBwexzq7wH8XnCi8GGTEgh",
+        "result": "Air conditioner temperature set to 22 degrees.",
+        "name": "ac_control-set_temperature",
+        "function_name": "set_temperature",
         "plugin_name": "ac_control",
         "encoding": null
       }
     ],
-    "predicted_response": "The air conditioner temperature has been decreased by4 degrees and is now set to22 degrees."
+    "predicted_response": "The air conditioner temperature has been decreased to22 degrees."
   },
   {
     "query": "turn on the air conditioner",
@@ -1223,7 +1277,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_aQX0SNJ5tkGE8JBEWUZjYIZD",
+        "id": "call_IAp1Z3vh4u2Nr7kNWwfJVHZJ",
         "result": "Air conditioner turned on.",
         "name": "ac_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -1258,7 +1312,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_jte0iDaUqDth8nS1RfYXSK9D",
+        "id": "call_eFYxrR4XRevKUD9i7ENzULfq",
         "result": "Air conditioner set to fan mode.",
         "name": "ac_control-set_mode",
         "function_name": "set_mode",
@@ -1293,7 +1347,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_lTiXUaY3YWlHAwbAJaFMZilx",
+        "id": "call_MVcIWPk1OyvIH5p68J86qqo1",
         "result": "Air conditioner set to dry mode.",
         "name": "ac_control-set_mode",
         "function_name": "set_mode",
@@ -1328,7 +1382,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_NwmtUygPm6WgD80niG0JJTN9",
+        "id": "call_qBcGuhu2DvH8jdA5Wl8gXL9z",
         "result": "Air conditioner timer set to 2 hours.",
         "name": "ac_control-set_timer",
         "function_name": "set_timer",
@@ -1336,7 +1390,7 @@
         "encoding": null
       }
     ],
-    "predicted_response": "The air conditioner timer is now set for2 hours."
+    "predicted_response": "The air conditioner timer has been set to2 hours."
   },
   {
     "query": "set the air conditioner timer to 4 hours",
@@ -1363,7 +1417,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_wOnuQd9PRJ6tdco8NuEvp3Qx",
+        "id": "call_tEy9tMtobzMWAUCso1mSpRLV",
         "result": "Air conditioner timer set to 4 hours.",
         "name": "ac_control-set_timer",
         "function_name": "set_timer",
@@ -1371,7 +1425,7 @@
         "encoding": null
       }
     ],
-    "predicted_response": "The air conditioner timer is now set for4 hours."
+    "predicted_response": "The air conditioner timer has been set to4 hours."
   },
   {
     "query": "start the dishwasher",
@@ -1398,7 +1452,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_Rt5LKeS3lwWTFDbiOet0ylHd",
+        "id": "call_EmhocsY8uniBBS98LauMk0mF",
         "result": "Dishwasher startd.",
         "name": "dishwasher_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -1433,7 +1487,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_9e7BYUVqfaXac92zGRWQwQw2",
+        "id": "call_6a376OgAxaBHLDcV7wqzSh6z",
         "result": "Dishwasher stopd.",
         "name": "dishwasher_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -1468,7 +1522,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_xhQs6LVUTUahMifCLr5nHNuT",
+        "id": "call_mlUlP5p0GqeMdXdwW05ixOLx",
         "result": "Dishwasher paused.",
         "name": "dishwasher_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -1503,7 +1557,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_FO9wR1mTZt0pe0lxPxtFLW0B",
+        "id": "call_eduh1f5WDYZjQAO0anYbQsKn",
         "result": "Dishwasher resumed.",
         "name": "dishwasher_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -1538,7 +1592,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_E9XjpmzADMq8AS6iuDrR3dpq",
+        "id": "call_2c8fCr4YBP1d7A1QmZcdJA1a",
         "result": "Dishwasher set to eco mode.",
         "name": "dishwasher_control-set_mode",
         "function_name": "set_mode",
@@ -1573,7 +1627,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_qpUjakIxBpgJdUw6Eb5v3mP5",
+        "id": "call_0dwHBBR5H4bYxh4HoqkX2tiS",
         "result": "Dishwasher set to heavy wash mode.",
         "name": "dishwasher_control-set_mode",
         "function_name": "set_mode",
@@ -1596,7 +1650,27 @@
         "plugin_name": "dishwasher_control"
       }
     ],
-    "predicted_response": "Unfortunately, there doesn't appear to be a quick wash mode available for the dishwasher. Would you like to choose another mode or specify an action?"
+    "predicted_function": [
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "mode": "quick wash"
+          },
+          "used_arguments": {
+            "mode": "quick wash"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_wxZa0rD9K2tR3aOfK2uBZHl2",
+        "result": "Dishwasher set to quick wash mode.",
+        "name": "dishwasher_control-set_mode",
+        "function_name": "set_mode",
+        "plugin_name": "dishwasher_control",
+        "encoding": null
+      }
+    ],
+    "predicted_response": "The dishwasher is now set to quick wash mode."
   },
   {
     "query": "set the dishwasher timer to 1 hour",
@@ -1623,7 +1697,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_gfX62yKZ23BUyDjGhHNGetQS",
+        "id": "call_MSjazL8yfWXL0HQlu5lLi9Dt",
         "result": "Dishwasher timer set to 1 hour.",
         "name": "dishwasher_control-set_timer",
         "function_name": "set_timer",
@@ -1631,7 +1705,7 @@
         "encoding": null
       }
     ],
-    "predicted_response": "The dishwasher timer is now set for1 hour."
+    "predicted_response": "The dishwasher timer has been set to1 hour."
   },
   {
     "query": "set the dishwasher timer to 2 hours",
@@ -1658,7 +1732,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_PEUthqksU3qPUcFR4MbF6gRx",
+        "id": "call_Pr4zI853PKuTaN1nwITXvC6S",
         "result": "Dishwasher timer set to 2 hours.",
         "name": "dishwasher_control-set_timer",
         "function_name": "set_timer",
@@ -1666,7 +1740,7 @@
         "encoding": null
       }
     ],
-    "predicted_response": "The dishwasher timer is now set for2 hours."
+    "predicted_response": "The dishwasher timer has been set to2 hours."
   },
   {
     "query": "turn on the dishwasher and start cleaning",
@@ -1693,7 +1767,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_I2YjiRzoGD92VK6uJsBvUNH5",
+        "id": "call_wTEORY9bwvRO3bAHa3be0eEC",
         "result": "Dishwasher startd.",
         "name": "dishwasher_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -1704,22 +1778,22 @@
         "ai_model_id": null,
         "metadata": {
           "arguments": {
-            "operation": "resume"
+            "operation": "start"
           },
           "used_arguments": {
-            "operation": "resume"
+            "operation": "start"
           }
         },
         "content_type": "function_result",
-        "id": "call_YSUENXDZmXutzVLp7JGzAlSE",
-        "result": "Dishwasher resumed.",
+        "id": "call_09VOSTqTdYi8tkXsJGRmMKq0",
+        "result": "Dishwasher startd.",
         "name": "dishwasher_control-control_device_operation",
         "function_name": "control_device_operation",
         "plugin_name": "dishwasher_control",
         "encoding": null
       }
     ],
-    "predicted_response": "The dishwasher has been turned on and cleaning has started."
+    "predicted_response": "The dishwasher has been turned on and started cleaning."
   },
   {
     "query": "turn off the dishwasher",
@@ -1746,7 +1820,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_JmS6r0GYf6OuIP8lrVHuzxSK",
+        "id": "call_9sm9Ws1bStYv8CZ7aWPczh73",
         "result": "Dishwasher stopd.",
         "name": "dishwasher_control-control_device_operation",
         "function_name": "control_device_operation",
@@ -1769,7 +1843,27 @@
         "plugin_name": "dishwasher_control"
       }
     ],
-    "predicted_response": "The dishwasher does not appear to support a \"sanitize\" mode. Would you like to choose another mode or specify a different action?"
+    "predicted_function": [
+      {
+        "ai_model_id": null,
+        "metadata": {
+          "arguments": {
+            "mode": "sanitize"
+          },
+          "used_arguments": {
+            "mode": "sanitize"
+          }
+        },
+        "content_type": "function_result",
+        "id": "call_DbziJ3T54ImtWtOw55KScuyr",
+        "result": "Dishwasher set to sanitize mode.",
+        "name": "dishwasher_control-set_mode",
+        "function_name": "set_mode",
+        "plugin_name": "dishwasher_control",
+        "encoding": null
+      }
+    ],
+    "predicted_response": "The dishwasher is now set to sanitize mode."
   },
   {
     "query": "set the dishwasher to rinse only mode",
@@ -1796,7 +1890,7 @@
           }
         },
         "content_type": "function_result",
-        "id": "call_vp9hfYiw32jk8WRZH7ijvMel",
+        "id": "call_StcIZMnpv3Mtd9X3JV1k3vDg",
         "result": "Dishwasher set to rinse only mode.",
         "name": "dishwasher_control-set_mode",
         "function_name": "set_mode",
@@ -1804,6 +1898,6 @@
         "encoding": null
       }
     ],
-    "predicted_response": "The dishwasher is now set to rinse only mode."
+    "predicted_response": "The dishwasher is now set to rinse-only mode."
   }
 ]

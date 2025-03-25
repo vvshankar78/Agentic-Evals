@@ -34,6 +34,3 @@ pipeline:
     - data_transformation
     - evaluation
     - reporting
-logging:
-  level: DEBUG
-  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

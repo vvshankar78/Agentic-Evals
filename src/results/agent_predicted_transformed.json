@@ -147,7 +147,7 @@
         "plugin_name": "washingmachine_control"
       }
     ],
-    "predicted_response": "The washing machine is now set to quick wash mode."
+    "predicted_response": "The washing machine has been set to quick wash mode."
   },
   {
     "query": "set the washing machine to delicate mode",
@@ -197,7 +197,7 @@
         "plugin_name": "washingmachine_control"
       }
     ],
-    "predicted_response": "The washing machine is now set to heavy load mode."
+    "predicted_response": "The washing machine has been set to heavy load mode."
   },
   {
     "query": "set the washing machine timer to 30 minutes",
@@ -222,7 +222,7 @@
         "plugin_name": "washingmachine_control"
       }
     ],
-    "predicted_response": "The washing machine timer is now set to30 minutes."
+    "predicted_response": "The washing machine timer has been set to30 minutes."
   },
   {
     "query": "set the washing machine timer to 1 hour",
@@ -247,7 +247,7 @@
         "plugin_name": "washingmachine_control"
       }
     ],
-    "predicted_response": "The washing machine timer is now set to1 hour."
+    "predicted_response": "The washing machine timer has been set to1 hour."
   },
   {
     "query": "turn on the TV and increase the volume",
@@ -362,7 +362,7 @@
         "plugin_name": "tv_control"
       }
     ],
-    "predicted_response": "The TV has been turned on, and the volume has been decreased. If you'd like to further reduce it to mute, you can continue decreasing the volume."
+    "predicted_response": "The TV has been turned on, and the volume has been decreased. Unfortunately, I don't have a direct option to mute the TV, but reducing the volume may still assist."
   },
   {
     "query": "turn on the TV and set the volume to 15",
@@ -377,8 +377,17 @@
         "plugin_name": "tv_control"
       }
     ],
-    "predicted_response": "Currently, I can only adjust the volume up or down incrementally. To set it at a specific volume level like15, you'll need to do it through your TV\u2019s control settings or remote. Would you like me to just increase or decrease the volume for now?",
-    "predicted_function": []
+    "predicted_function": [
+      {
+        "arguments": {
+          "operation": "on"
+        },
+        "result": "TV turned on.",
+        "function_name": "control_device_operation",
+        "plugin_name": "tv_control"
+      }
+    ],
+    "predicted_response": "The TV has been turned on. However, I cannot directly set a specific volume level, but you can manually adjust it to reach15."
   },
   {
     "query": "turn on the TV and switch to HDMI 1",
@@ -460,7 +469,7 @@
         "plugin_name": "tv_control"
       }
     ],
-    "predicted_response": "The TV has been turned on, and Netflix is now open. Enjoy your viewing!"
+    "predicted_response": "The TV has been turned on, and Netflix is now open."
   },
   {
     "query": "turn on the TV and increase the brightness",
@@ -475,8 +484,25 @@
         "plugin_name": "tv_control"
       }
     ],
-    "predicted_response": "I can turn on the TV, but the brightness adjustment requires a specific level to be set. Could you let me know the desired brightness level, or should I proceed only with turning on the TV for now?",
-    "predicted_function": []
+    "predicted_function": [
+      {
+        "arguments": {
+          "operation": "on"
+        },
+        "result": "TV turned on.",
+        "function_name": "control_device_operation",
+        "plugin_name": "tv_control"
+      },
+      {
+        "arguments": {
+          "brightness": "increase"
+        },
+        "result": "TV brightness set to increase.",
+        "function_name": "set_brightness",
+        "plugin_name": "tv_control"
+      }
+    ],
+    "predicted_response": "The TV has been turned on, and its brightness level has been increased."
   },
   {
     "query": "turn on the TV and set the channel to 101",
@@ -517,7 +543,7 @@
         "plugin_name": "tv_control"
       }
     ],
-    "predicted_response": "The TV has been turned on, and the channel is now set to101."
+    "predicted_response": "The TV has been turned on, and the channel has been set to101."
   },
   {
     "query": "turn on the TV and enable subtitles",
@@ -636,7 +662,7 @@
         "plugin_name": "tv_control"
       }
     ],
-    "predicted_response": "The TV has been turned on, and YouTube is now open. Enjoy your viewing!"
+    "predicted_response": "The TV has been turned on, and YouTube is now open."
   },
   {
     "query": "turn off the TV",
@@ -736,7 +762,7 @@
         "plugin_name": "ac_control"
       }
     ],
-    "predicted_response": "The air conditioner temperature is now set to24 degrees."
+    "predicted_response": "The air conditioner temperature has been set to24 degrees."
   },
   {
     "query": "turn off the air conditioner",
@@ -804,15 +830,14 @@
     "predicted_function": [
       {
         "arguments": {
-          "operation": "increase",
-          "value": "2"
+          "temperature": "26"
         },
-        "result": "Air conditioner temperature increased by 2 degrees.",
-        "function_name": "adjust_temperature",
+        "result": "Air conditioner temperature set to 26 degrees.",
+        "function_name": "set_temperature",
         "plugin_name": "ac_control"
       }
     ],
-    "predicted_response": "The air conditioner temperature has been increased by2 degrees and is now set to26 degrees."
+    "predicted_response": "The air conditioner temperature has been increased to26 degrees."
   },
   {
     "query": "decrease the air conditioner temperature to 22 degrees",
@@ -830,15 +855,14 @@
     "predicted_function": [
       {
         "arguments": {
-          "operation": "decrease",
-          "value": "4"
+          "temperature": "22"
         },
-        "result": "Air conditioner temperature decreased by 4 degrees.",
-        "function_name": "adjust_temperature",
+        "result": "Air conditioner temperature set to 22 degrees.",
+        "function_name": "set_temperature",
         "plugin_name": "ac_control"
       }
     ],
-    "predicted_response": "The air conditioner temperature has been decreased by4 degrees and is now set to22 degrees."
+    "predicted_response": "The air conditioner temperature has been decreased to22 degrees."
   },
   {
     "query": "turn on the air conditioner",
@@ -938,7 +962,7 @@
         "plugin_name": "ac_control"
       }
     ],
-    "predicted_response": "The air conditioner timer is now set for2 hours."
+    "predicted_response": "The air conditioner timer has been set to2 hours."
   },
   {
     "query": "set the air conditioner timer to 4 hours",
@@ -963,7 +987,7 @@
         "plugin_name": "ac_control"
       }
     ],
-    "predicted_response": "The air conditioner timer is now set for4 hours."
+    "predicted_response": "The air conditioner timer has been set to4 hours."
   },
   {
     "query": "start the dishwasher",
@@ -1128,8 +1152,17 @@
         "plugin_name": "dishwasher_control"
       }
     ],
-    "predicted_response": "Unfortunately, there doesn't appear to be a quick wash mode available for the dishwasher. Would you like to choose another mode or specify an action?",
-    "predicted_function": []
+    "predicted_function": [
+      {
+        "arguments": {
+          "mode": "quick wash"
+        },
+        "result": "Dishwasher set to quick wash mode.",
+        "function_name": "set_mode",
+        "plugin_name": "dishwasher_control"
+      }
+    ],
+    "predicted_response": "The dishwasher is now set to quick wash mode."
   },
   {
     "query": "set the dishwasher timer to 1 hour",
@@ -1154,7 +1187,7 @@
         "plugin_name": "dishwasher_control"
       }
     ],
-    "predicted_response": "The dishwasher timer is now set for1 hour."
+    "predicted_response": "The dishwasher timer has been set to1 hour."
   },
   {
     "query": "set the dishwasher timer to 2 hours",
@@ -1179,7 +1212,7 @@
         "plugin_name": "dishwasher_control"
       }
     ],
-    "predicted_response": "The dishwasher timer is now set for2 hours."
+    "predicted_response": "The dishwasher timer has been set to2 hours."
   },
   {
     "query": "turn on the dishwasher and start cleaning",
@@ -1205,14 +1238,14 @@
       },
       {
         "arguments": {
-          "operation": "resume"
+          "operation": "start"
         },
-        "result": "Dishwasher resumed.",
+        "result": "Dishwasher startd.",
         "function_name": "control_device_operation",
         "plugin_name": "dishwasher_control"
       }
     ],
-    "predicted_response": "The dishwasher has been turned on and cleaning has started."
+    "predicted_response": "The dishwasher has been turned on and started cleaning."
   },
   {
     "query": "turn off the dishwasher",
@@ -1252,8 +1285,17 @@
         "plugin_name": "dishwasher_control"
       }
     ],
-    "predicted_response": "The dishwasher does not appear to support a \"sanitize\" mode. Would you like to choose another mode or specify a different action?",
-    "predicted_function": []
+    "predicted_function": [
+      {
+        "arguments": {
+          "mode": "sanitize"
+        },
+        "result": "Dishwasher set to sanitize mode.",
+        "function_name": "set_mode",
+        "plugin_name": "dishwasher_control"
+      }
+    ],
+    "predicted_response": "The dishwasher is now set to sanitize mode."
   },
   {
     "query": "set the dishwasher to rinse only mode",
@@ -1278,6 +1320,6 @@
         "plugin_name": "dishwasher_control"
       }
     ],
-    "predicted_response": "The dishwasher is now set to rinse only mode."
+    "predicted_response": "The dishwasher is now set to rinse-only mode."
   }
 ]
